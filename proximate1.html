@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivardhan Muthyala - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="logo">
+            <i class="fas fa-laptop-code"></i> SM
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a href="resume.html">
+            <button class="resume-button" aria-label="Resume">
+                <i class="fas fa-file-alt"></i>
+            </button></a>
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <h1 class="name"><i class="fas fa-user-tie"></i> Srivardhan Muthyala</h1>
+        <p>AI Innovator | Cloud Architect | Machine Learning Specialist</p>
+        <div class="hero-buttons">
+            <button onclick="viewPortfolio()"><i class="fas fa-briefcase"></i> View Portfolio</button>
+            <button onclick="contactMe()"><i class="fas fa-envelope"></i> Contact Me</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Professional Photo" class="profile-photo">
+            <p>
+                <i class="fas fa-quote-left"></i>
+                AI-driven software engineer specializing in scalable machine learning, generative AI solutions, and cloud-based infrastructures.
+                <i class="fas fa-quote-right"></i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3><i class="fas fa-chart-line"></i> Sentiment Analysis Tool</h3>
+                <p>Built using Hugging Face Transformers and AWS SageMaker.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fas fa-eye"></i> Macular Edema Detection</h3>
+                <p>CNN-based healthcare solution deployed on SageMaker.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fas fa-video"></i> Generative AI for Marketing</h3>
+                <p>Developed using GANs and diffusion models for personalized videos.</p>
+            </div>
+            <div class="project-card">
+                <h3><i class="fas fa-file-alt"></i> Data Summarization Pipeline</h3>
+                <p>Used LangChain and GCP Vertex AI for concise report generation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Skill Section</h2>
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Cypher Query Language</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+    
+            <!-- Machine Learning & AI Frameworks -->
+            <div class="skill-category">
+                <h3>Machine Learning & AI Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">XGBoost</span>
+                    <span class="skill-tag">Hugging Face Transformers</span>
+                    <span class="skill-tag">LangChain</span>
+                    <span class="skill-tag">AWS Bedrock</span>
+                </div>
+            </div>
+    
+            <!-- Machine Learning Techniques -->
+            <div class="skill-category">
+                <h3>Machine Learning Techniques</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">RLHF</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">Large Language Models (LLMs)</span>
+                    <span class="skill-tag">Few-shot Learning</span>
+                    <span class="skill-tag">Chain-of-Thought Prompting</span>
+                    <span class="skill-tag">Transfer Learning</span>
+                    <span class="skill-tag">Zero-shot Learning</span>
+                    <span class="skill-tag">Multi-modal AI Systems</span>
+                </div>
+            </div>
+    
+            <!-- NLP -->
+            <div class="skill-category">
+                <h3>NLP</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Sentiment Analysis</span>
+                    <span class="skill-tag">Summarization</span>
+                    <span class="skill-tag">Text Classification</span>
+                </div>
+            </div>
+    
+            <!-- Machine Learning Systems -->
+            <div class="skill-category">
+                <h3>Machine Learning Systems</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Recommendation Engines</span>
+                    <span class="skill-tag">Near-real-time Recommendation Systems</span>
+                    <span class="skill-tag">Clustering</span>
+                    <span class="skill-tag">Community Detection</span>
+                    <span class="skill-tag">End-to-end Machine Learning Systems</span>
+                    <span class="skill-tag">Synthetic Data Generation</span>
+                </div>
+            </div>
+    
+            <!-- Cloud Platforms -->
+            <div class="skill-category">
+                <h3>Cloud Platforms</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS (ECS, EC2, S3, CloudWatch)</span>
+                    <span class="skill-tag">GCP (Vertex AI, BigQuery)</span>
+                </div>
+            </div>
+    
+            <!-- DevOps & Infrastructure -->
+            <div class="skill-category">
+                <h3>DevOps & Infrastructure</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">Infrastructure as Code (IaC)</span>
+                    <span class="skill-tag">Cloud-based AI Infrastructure</span>
+                    <span class="skill-tag">Advanced Orchestration Tools (e.g., Argo, Airflow)</span>
+                </div>
+            </div>
+    
+            <!-- Web Development Frameworks -->
+            <div class="skill-category">
+                <h3>Web Development Frameworks</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Django</span>
+                </div>
+            </div>
+    
+            <!-- Data Engineering -->
+            <div class="skill-category">
+                <h3>Data Engineering</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Data Manipulation</span>
+                    <span class="skill-tag">Data Pipelines</span>
+                    <span class="skill-tag">Data Governance</span>
+                    <span class="skill-tag">Feature Engineering</span>
+                    <span class="skill-tag">Feature Store Management</span>
+                    <span class="skill-tag">Data Versioning</span>
+                    <span class="skill-tag">Real-time Data Processing</span>
+                    <span class="skill-tag">Distributed Computing (e.g., Apache Spark)</span>
+                </div>
+            </div>
+    
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Postgres</span>
+                    <span class="skill-tag">Neo4j</span>
+                    <span class="skill-tag">Neptune</span>
+                    <span class="skill-tag">Vector Databases (e.g., Pinecone, Weaviate)</span>
+                    <span class="skill-tag">Knowledge Graphs</span>
+                </div>
+            </div>
+    
+            <!-- Project Management -->
+            <div class="skill-category">
+                <h3>Project Management</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agile (Scrum, Kanban)</span>
+                    <span class="skill-tag">Jira</span>
+                    <span class="skill-tag">Confluence</span>
+                    <span class="skill-tag">Stakeholder Communication</span>
+                    <span class="skill-tag">Sprint Planning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Additional categories can follow here -->
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+<h2><i class="fas fa-envelope"></i> Contact Me</h2>
+<form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Srivardhan Muthyala. All Rights Reserved.</p>
+    <div class="social-links">
+        <a href="https://linkedin.com/in/srivardhan-ai-pm" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

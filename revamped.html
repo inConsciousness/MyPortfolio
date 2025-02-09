@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srivardhan Muthyala - AI Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #0073b1;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #005f8a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #0073b1;
+            margin-bottom: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            font-size: 2.5rem;
+            color: #28a745;
+        }
+
+        .about-section {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about-section i {
+            font-size: 3rem;
+            color: #0073b1;
+        }
+
+        .about-section div {
+            flex: 1;
+        }
+
+        .project-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project i {
+            font-size: 2.5rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #333;
+        }
+
+        .project p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #0073b1;
+            color: #fff;
+            border-radius: 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .project a:hover {
+            background-color: #005f8a;
+        }
+
+        footer {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        footer .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            background-color: #0073b1;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        footer .social-links a:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="profile-pic.jpg" alt="Profile Picture">
+        <h1>SRIVARDHAN MUTHYALA</h1>
+        <p>PMP-Certified IT Project Manager | AI & ML Specialist | AWS ML Engineer | Prompt Engineering Expert</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title"><i class="fas fa-user-circle"></i> About Me</h2>
+            <div class="about-section">
+                <i class="fas fa-user-circle"></i>
+                <div>
+                    <p>
+                        Technically proficient Software Engineer with expertise in Python, JavaScript, RESTful APIs, and scalable application development. Skilled at leveraging cloud platforms, machine learning frameworks, and Generative AI technologies to deliver innovative solutions. Adept at collaborating in Agile environments, optimizing business processes, and developing end-to-end AI pipelines. Certified in project management and cloud-based machine learning, with a strong focus on delivering impactful, data-driven results.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title"><i class="fas fa-briefcase"></i> Projects</h2>
+            <div class="project-section">
+                <div class="project">
+                    <i class="fas fa-comments"></i>
+                    <h3>Chatbot Deployment</h3>
+                    <p>Designed and developed a basic chatbot using Amazon Lex and deployed it through AWS SageMaker, facilitating seamless interaction with end-users.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-video"></i>
+                    <h3>Generative AI for Marketing</h3>
+                    <p>Developed a text-to-video generation system using GANs and diffusion models.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-database"></i>
+                    <h3>Cloud-based Data Pipelines</h3>
+                    <p>Built and optimized cloud-based data pipelines with Python and SQL, improving data processing efficiency by 25%.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="project">
+                    <i class="fas fa-language"></i>
+                    <h3>Modular NLP Models</h3>
+                    <p>Participated in fine-tuning NLP models for text classification and sentiment analysis, achieving actionable business insights.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Connect with me:</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/srivardhan-ai-pm" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="resume.pdf" target="_blank">
+                <i class="fas fa-file-alt"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
